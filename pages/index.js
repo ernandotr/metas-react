@@ -42,7 +42,7 @@ function Home({data}){
 }
 
 export async function getServerSideProps() {
-    const response = await fetch(`http://localhost/metas`);
+    const response = await fetch(`http://metasapi-com-br.umbler.net/metas`);
     const data = await response.json();
     return { props: { data}  };
   }

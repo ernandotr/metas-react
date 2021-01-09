@@ -23,7 +23,7 @@ function Cadastrar(){
         
         setResponse({formSave: true})
         try{
-            const res = await fetch('http://localhost/metas', {
+            const res = await fetch('http://metasapi-com-br.umbler.net/metas', {
                 method: 'POST',
                 body: JSON.stringify(meta),
                 headers: {'Content-Type': 'application/json'}
